@@ -23,4 +23,4 @@ curl -sL https://get.docker.io/ | sh
 curl -sL https://raw.githubusercontent.com/dotcloud/docker/master/contrib/completion/bash/docker > /etc/bash_completion.d/docker
 
 
-echo -e "${YELLOW}Add users to the 'docker' group${RS}"
+echo -e "${YELLOW}Add users to the 'docker' group: ${RS} sudo adduser \$(whoami) docker"
