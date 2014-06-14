@@ -9,6 +9,9 @@ cd "$DEST"
 git pull
 
 SOURCE_CMD=". \"$DEST/liquidprompt\""
-$(grep -c "$SOURCE_CMD" ~/.bashrc) -eq 0 && echo $SOURCE_CMD >> ~/.bashrc ||:
+test $(grep -c "$SOURCE_CMD" ~/.bashrc) -eq 0 && echo $SOURCE_CMD >> ~/.bashrc ||:
 
-. ~/.bashrc
+green='\e[0;32m'
+rs='\e[0m'
+
+echo -e "${green}liquidprompt installed.${rs} Now type: . ~/.bashrc"
