@@ -8,7 +8,7 @@ DEST=~/.liquidprompt
 cd "$DEST"
 git pull
 
-if [[ $(grep -c '. "$DEST"' ~/.bashrc) -eq 0 ]; then
+if [[ $(grep -c ". \"$DEST\"" ~/.bashrc) -eq 0 ]; then
   echo ". \"$DEST\"" >> ~/.bashrc
 fi
 
