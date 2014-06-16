@@ -6,6 +6,14 @@ Liquidprompt
 
     curl -L http://goo.gl/klY2oO | bash
 
+ssh-agent helper
+----------------
+
+Start a ssh-agent on login and reuse existing one if found.
+
+    curl -L http://goo.gl/EtJEgE | bash
+    
+
 
 Ubuntu Trusty
 -------------
