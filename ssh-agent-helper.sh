@@ -28,4 +28,4 @@ if [ ! -f ~/.ssh-agent-helper ]; then
 		EOF
 fi
 
-test grep -c '. ~/.ssh-agent-helper' ~/.bashrc || echo '. ~/.ssh-agent-helper' >> ~/.bashrc
+[[ $(grep -c '. ~/.ssh-agent-helper' ~/.bashrc) -eq 0 ]] && echo '. ~/.ssh-agent-helper' >> ~/.bashrc
