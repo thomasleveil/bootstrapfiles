@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -f ~/.ssh-agent-helper ]; then
-	cat > ~/.ssh-agent-helper <<-EOF
+	cat > ~/.ssh-agent-helper <<-"EOF"
 	
 		SSH_ENV=$HOME/.ssh/environment
 		
