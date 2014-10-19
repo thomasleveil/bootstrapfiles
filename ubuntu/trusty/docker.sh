@@ -19,7 +19,7 @@ test "$(whoami)" = "root"
 
 
 ## install docker
-curl -sL https://get.docker.io/ | sh
+curl -sL https://get.docker.com/ | sh
 curl -sL https://raw.githubusercontent.com/dotcloud/docker/master/contrib/completion/bash/docker > /etc/bash_completion.d/docker
 
 
